@@ -1,0 +1,7 @@
+.navbar-brand {
+    position: relative;
+    /* background: url(assets/images/AlleyCat_icon.png); */
+    width: 280px;
+    left: 15px;
+    background-size: contain;
+}
