@@ -12,11 +12,25 @@ body{ background-color: #f42b03;
 
 .nav-link{color: #1aa7ec}
 
-.content {
+/* .content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+  display: inline-grid;
 }
+
+.item {
+    margin: 0.5rem;
+} */
+
+img {
+    float: left;
+    margin: 5px;
+  }
+
+  p {
+    text-align: justify;
+  }
 
 h1, h2 {
     color:#1aa7ec;
