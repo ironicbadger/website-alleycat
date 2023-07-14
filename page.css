@@ -12,7 +12,7 @@ body{ background-color: #f42b03;
 
 .nav-link{color: #1aa7ec}
 
-/* .content {
+.content {
     display: flex;
   flex-wrap: wrap;
   margin: -0.5rem;
@@ -21,7 +21,7 @@ body{ background-color: #f42b03;
 
 .item {
     margin: 0.5rem;
-} */
+}
 
 img {
     float: right;
