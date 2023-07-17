@@ -12,22 +12,22 @@ body{ background-color: #f42b03;
 
 .nav-link{color: #1aa7ec}
 
-.content {
+/* .content {
     display: flex;
     flex-direction: row;
   flex-wrap: wrap;
   margin: -0.5rem;
   display: inline-grid;
-}
+} */
 
 .item {
     margin: 0.5rem;
 }
-
-/* img {
+/* 
+.CatHeadShot {
     float: right;
     margin: 5px;
-  } */
+  }  */
 
   p {
     text-align: justify;
@@ -53,9 +53,9 @@ h3, h4 {
         column-gap: 5px;
        } */
        
-       img {
+       /* img {
         float: inline-end;
-       }
+       } */
        
        .text {
         display: inline;
@@ -64,14 +64,6 @@ h3, h4 {
        .btn btn-primary {
         color:#1aa7ec;
        }
-
-.pretty-box {
-    background-color:#1aa7ec;
-    border-radius: 25px;
-  padding: 20px;
-  width: 100%;
-  height: 150px;
-}
 
 .scheduleParagraph {
     padding-bottom: 10px;
