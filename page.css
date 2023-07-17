@@ -14,6 +14,7 @@ body{ background-color: #f42b03;
 
 .content {
     display: flex;
+    flex-direction: row;
   flex-wrap: wrap;
   margin: -0.5rem;
   display: inline-grid;

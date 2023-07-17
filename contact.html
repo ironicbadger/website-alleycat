@@ -11,12 +11,22 @@
 
 <body>
 
+      <!-- Loads top navbar automatically from navbar.html -->
+      <div id="navbar-placeholder"></div>
+      <script>
+          $(function(){
+            $("#navbar-placeholder").load("navbar.html");
+          });
+      </script>
+      <!-- End of navbar -->
+
 <link href="contact-form.css" rel="stylesheet">
 
+<div class="container"></div>
 <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+    <h3 class="fcf-h3">Contact me</h3>
 
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
@@ -45,13 +55,11 @@
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
         </div>
 
-        <div class="fcf-credit" id="fcf-credit">
-        Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
-        </div>
 
     </form>
     </div>
 
+</div>
 </div>
 
 </body>
