@@ -1,7 +1,7 @@
-body{ background-color: #f42b03;
+/* body{ background-color: #f42b03;
     background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
     background-repeat: repeat-y;
-}    
+}     */
 
 .container{
     background-color: #ffffff;
@@ -12,14 +12,14 @@ body{ background-color: #f42b03;
 
 .nav-link{color: #1aa7ec}
 
-#aboutMe {
+/* #aboutMe {
     display: flex;
     align-items: center;
-}
+} */
 
-#aboutMe p {
+/* #aboutMe p {
     margin-left: 1em;
-}
+} */
 
 
 /* #para1 {
