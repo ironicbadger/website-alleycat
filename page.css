@@ -12,6 +12,20 @@ body{ background-color: #f42b03;
 
 .nav-link{color: #1aa7ec}
 
+#aboutMe {
+    display: flex;
+    align-items: center;
+}
+
+#aboutMe p {
+    margin-left: 1em;
+}
+
+
+/* #para1 {
+  width: 50%;
+} */
+
 /* .content {
     display: flex;
     flex-direction: row;
@@ -42,6 +56,10 @@ h1, h2 {
 h3, h4 {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h6 {
+  color:#f42b03;
 }
 
 .card {border: 50px}
