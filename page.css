@@ -1,3 +1,15 @@
+/* To Do - Pick new font which you actually really like! */
+
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+} */
+
 .hero {
   background: url("/assets/images/catPianoHands.jpg") center;
   background-size: cover;
@@ -34,8 +46,8 @@
   display: grid;
   grid-template-columns: repeat(3, auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
-  grid-auto-flow: row;
-  grid-auto-columns: minmax(260px, 1fr);
+  /* grid-auto-flow: row; */
+  /* grid-auto-columns: minmax(260px, 1fr); */
   /* grid-template-rows: auto; */
   grid-template-areas:
     "About-AlleyCat About-AlleyCat Student-Pic"
