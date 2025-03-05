@@ -14,3 +14,46 @@
     left: 15px;
     background-size: contain;
 }
+
+/* Desktop and Mobile specific layouts */
+.desktop-layout {
+    display: block;
+}
+
+.mobile-layout {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-layout {
+        display: none;
+    }
+    
+    .mobile-layout {
+        display: block;
+    }
+}
+
+/* About section styles */
+.about-image-desktop {
+    float: right;
+    max-width: 400px;
+    margin: 0 0 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-image-mobile {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.about-text {
+    color: #4A5568;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
