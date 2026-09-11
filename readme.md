@@ -23,3 +23,15 @@ Student Portal links to My Music Staff's official login. The previous embedded w
 The original `assets/images/AlleyCat_string.png` is used unchanged. Fonts are served locally; their open-font licenses are in `assets/fonts`. Standard interface icons are from Iconoir, with its license in `assets/icons`. Both photographs use the original, unmodified images of Cat. The instrument illustrations and underline were generated from the approved visual direction. Instrument WebP assets are the optimized versions used by the page.
 
 No external JavaScript framework is required. For hosting, run `node scripts/build-static.mjs` to create the curated `dist/` output. `.openai/hosting.json` identifies the Sites project and static output directory. Only public page assets are copied to the deployment; repository metadata and internal QA notes are excluded.
+
+## Seasonal announcements
+
+Edit `schoolAnnouncement` at the top of `site.js`. The same banner appears on every modern page:
+
+- `enabled`: set to `false` when there is no announcement.
+- `text`: the short announcement, such as an upcoming recital or new class.
+- `linkText` and `href`: an optional link; leave both empty for text only. Use `index.html#group-classes` for the young musicians section.
+
+The banner uses plain text, wraps on small screens, and does not rotate or scroll. It requires JavaScript. Class descriptions and age ranges are in `index.html` under `group-classes`.
+
+The announcements and young musicians work is a local draft on `codex/announcements-and-young-musicians`. It has not been published.

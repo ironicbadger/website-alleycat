@@ -19,9 +19,15 @@ const images = [
   "catClarinet.jpg",
   "catPiano.jpg",
   "heading-swish.png",
-  ...["piano", "voice", "clarinet", "saxophone", "bassoon"].map(
-    (name) => `lesson-${name}.webp`,
-  ),
+  ...[
+    "piano",
+    "voice",
+    "clarinet",
+    "saxophone",
+    "bassoon",
+    "theory",
+    "groups",
+  ].map((name) => `lesson-${name}.webp`),
 ];
 
 // Publish only public page assets, never repository metadata or internal notes.
