@@ -21,7 +21,7 @@ final result: passed
 ## Findings and comparison history
 
 1. Initial desktop hero was too tall (550px). Reduced it to 490px and reduced header/instrument spacing. Final captures show the main sections in the intended order and similar proportions.
-2. Initial teacher photograph was too loosely framed. Added an overflow-hidden image frame and a 1.3× centered crop. Final lower-section comparison verifies the closer crop.
+2. Teacher photograph now uses top alignment without zoom, preserving Cat’s full head as requested in follow-up feedback. Verified on desktop and mobile.
 3. Original mobile menu hid Student Portal. Moved that action outside the collapsing navigation, with a full-width pill on phones. Mobile screenshot verifies visibility.
 4. Tablet heading/navigation needed narrower sizing. Added a 761–950px adjustment; 768px browser inspection shows no clipping. 320px and 390px checks show no horizontal overflow.
 5. Existing My Music Staff widget produced an empty, zero-height iframe with third-party warnings. Replaced it with a verified direct login link. Browser click reached the My Music Staff login form. No credentials entered or payments attempted.
@@ -32,7 +32,7 @@ final result: passed
 - Typography: locally hosted Fraunces headings and Nunito Sans body/UI. The headline is deliberately smaller than the generated mockup, following the repeated request for a calmer heading. Body remains readable and headings wrap cleanly on phones.
 - Spacing: same split hero, instrument row, teacher introduction, pink lesson/testimonial section and contact section. Mobile stacks these sections naturally. Extra footer is a practical addition.
 - Colors: orange-red primary button, blue portal treatment and links, charcoal text, pale gray hero and pale pink lesson band. Original logo file is unchanged byte for byte (SHA-256 compared with HEAD).
-- Imagery: original logo and original clarinet photograph; generated hero and five individual instrument assets follow the approved direction. No decorative instrument rays. Standard contact/menu icons use Iconoir assets. Hero optimized from ~2.2MB PNG to ~192KB WebP. Instrument images are optimized WebP.
+- Imagery: original logo, original piano photograph and original clarinet photograph. The generated hero was replaced following user feedback; neither photograph modifies Cat’s appearance. Both photographs are top-aligned to preserve headroom, verified on desktop and mobile. Five individual instrument illustrations use optimized WebP. No decorative instrument rays. Standard contact/menu icons use Iconoir assets.
 - Content: “Music lessons with Cat”; “Ages 3 and up, including adults”; online lessons explicit; real student quotation; human lesson copy; no corporate tagline. Expanded biography uses the original site's facts. Prices preserved from the original site. Removed stale June 2024 recital announcement.
 
 ## Verification

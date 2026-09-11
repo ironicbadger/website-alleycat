@@ -20,6 +20,6 @@ The school's Google registration form is linked from the homepage, lessons page 
 
 Student Portal links to My Music Staff's official login. The previous embedded widget rendered an empty frame, so it has been replaced with a direct sign-in link.
 
-The original `assets/images/AlleyCat_string.png` is used unchanged. Fonts are served locally; their open-font licenses are in `assets/fonts`. Standard interface icons are from Iconoir, with its license in `assets/icons`. The hero image, instrument illustrations and underline were generated from the approved visual direction. WebP assets are the optimized versions used by the page.
+The original `assets/images/AlleyCat_string.png` is used unchanged. Fonts are served locally; their open-font licenses are in `assets/fonts`. Standard interface icons are from Iconoir, with its license in `assets/icons`. Both photographs use the original, unmodified images of Cat. The instrument illustrations and underline were generated from the approved visual direction. Instrument WebP assets are the optimized versions used by the page.
 
 No external JavaScript framework is required. For hosting, run `node scripts/build-static.mjs` to create the curated `dist/` output. `.openai/hosting.json` identifies the Sites project and static output directory. Only public page assets are copied to the deployment; repository metadata and internal QA notes are excluded.

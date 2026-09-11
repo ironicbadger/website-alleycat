@@ -17,7 +17,7 @@ const images = [
   "AlleyCat_string.png",
   "favicon.ico",
   "catClarinet.jpg",
-  "cat-piano-hero.webp",
+  "catPiano.jpg",
   "heading-swish.png",
   ...["piano", "voice", "clarinet", "saxophone", "bassoon"].map(
     (name) => `lesson-${name}.webp`,
