@@ -1045,25 +1045,28 @@ summary {
 /* Balance the lessons overview and pricing across the page. */
 .lessons-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(32px, 6vw, 80px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  column-gap: clamp(32px, 5vw, 64px);
+  row-gap: 28px;
   align-items: start;
 }
-.lessons-introduction h1 {
+.lessons-layout > h1 {
+  grid-column: 1 / -1;
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .lessons-introduction .page-intro {
   max-width: 520px;
   margin-bottom: 20px;
 }
 .lessons-pricing {
-  background: var(--gray);
+  background: #fafafa;
+  border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 30px;
+  padding: 26px;
 }
 .lessons-pricing h2 {
-  font-size: 34px;
+  font-size: 30px;
 }
 .lessons-pricing .price-table {
   width: 100%;
@@ -1078,21 +1081,26 @@ summary {
 .lessons-pricing .price-table thead th:last-child {
   text-align: right;
 }
+.lessons-pricing .price-table th,
+.lessons-pricing .price-table td {
+  padding-block: 12px;
+}
 .lessons-pricing > p {
   font-size: 16px;
 }
 .lessons-illustration {
-  width: min(100%, 440px);
-  height: 220px;
+  width: 100%;
+  height: auto;
+  max-height: 290px;
   object-fit: contain;
-  margin: 24px auto 0;
+  margin: 20px auto 0;
 }
 @media (max-width: 760px) {
   .lessons-layout {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .lessons-introduction h1 {
+  .lessons-layout > h1 {
     font-size: 38px;
   }
   .lessons-pricing {
