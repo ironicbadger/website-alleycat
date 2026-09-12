@@ -1050,10 +1050,9 @@ summary {
   row-gap: 28px;
   align-items: start;
 }
-.lessons-layout > h1 {
-  grid-column: 1 / -1;
+.lessons-introduction h1 {
   font-size: 48px;
-  margin-bottom: 0;
+  margin-bottom: 28px;
 }
 .lessons-introduction .page-intro {
   max-width: 520px;
@@ -1100,7 +1099,7 @@ summary {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .lessons-layout > h1 {
+  .lessons-introduction h1 {
     font-size: 38px;
   }
   .lessons-pricing {
