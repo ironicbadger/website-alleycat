@@ -20,6 +20,7 @@ const images = [
   "catClarinet.jpg",
   "catPiano.jpg",
   "heading-swish.png",
+  "lessons-piano-cat.webp",
   ...[
     "piano",
     "voice",

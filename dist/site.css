@@ -1081,6 +1081,12 @@ summary {
 .lessons-pricing > p {
   font-size: 16px;
 }
+.lessons-illustration {
+  width: min(100%, 440px);
+  height: 220px;
+  object-fit: contain;
+  margin: 24px auto 0;
+}
 @media (max-width: 760px) {
   .lessons-layout {
     grid-template-columns: 1fr;
