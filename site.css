@@ -1,4 +1,4 @@
-@import url("./assets/fonts/fonts.css");
+@import url("./assets/fonts/fonts.css?v=20260912-dm");
 
 :root {
   --ink: #222a2e;
@@ -8,8 +8,8 @@
   --pink: #fff0f3;
   --gray: #f3f4f4;
   --line: #d8dadd;
-  --serif: "Fraunces", Georgia, serif;
-  --sans: "Nunito Sans", Arial, sans-serif;
+  --serif: "DM Serif Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -59,7 +59,7 @@ h1,
 h2,
 h3 {
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.12;
   letter-spacing: -0.035em;
 }
@@ -383,7 +383,7 @@ summary {
   align-items: center;
 }
 .testimonial blockquote {
-  font: italic 500 28px/1.32 var(--serif);
+  font: italic 400 28px/1.32 var(--serif);
   letter-spacing: -0.02em;
   margin: 0;
 }
