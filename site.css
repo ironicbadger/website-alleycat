@@ -243,6 +243,7 @@ summary {
   margin-top: 6px;
 }
 .instruments {
+  padding-inline: 0;
   padding-top: 28px;
   padding-bottom: 28px;
   display: grid;
