@@ -1041,3 +1041,58 @@ summary {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+
+/* Balance the lessons overview and pricing across the page. */
+.lessons-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 80px);
+  align-items: start;
+}
+.lessons-introduction h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.lessons-introduction .page-intro {
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+.lessons-pricing {
+  background: var(--gray);
+  border-radius: 12px;
+  padding: 30px;
+}
+.lessons-pricing h2 {
+  font-size: 34px;
+}
+.lessons-pricing .price-table {
+  width: 100%;
+  margin-block: 20px;
+}
+.lessons-pricing .price-table caption {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.lessons-pricing .price-table td,
+.lessons-pricing .price-table thead th:last-child {
+  text-align: right;
+}
+.lessons-pricing > p {
+  font-size: 16px;
+}
+@media (max-width: 760px) {
+  .lessons-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lessons-introduction h1 {
+    font-size: 38px;
+  }
+  .lessons-pricing {
+    padding: 24px;
+  }
+  .lessons-pricing h2 {
+    font-size: 30px;
+  }
+}
