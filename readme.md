@@ -41,3 +41,7 @@ The announcements and young musicians work is a local draft on `codex/announceme
 `music-kittens.html` contains Music Kittens and Mini Musicians ages, fall dates, class times, pricing and caregiver requirements from the supplied flyer. Its registration button uses the dedicated Google Form decoded from the flyer QR code, separate from private lesson registration. The original flyer is available at `assets/documents/music-kittens-flyer.pdf`.
 
 The shared Lessons navigation is a native disclosure with Sign up and Music Kittens links. When editing navigation, update all six public pages and `navbar.html`; Escape, outside clicks and focus leaving the dropdown close it.
+
+## Navigation comparison
+
+The `codex/nav-redo` worktree previews direct Lessons, Little musicians and FAQs links, with the existing prominent Student Portal button. The previous dropdown design stays in the original worktree. This version is local only.

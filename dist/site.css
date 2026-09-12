@@ -1035,3 +1035,9 @@ summary {
     padding: 24px 20px;
   }
 }
+
+/* Current section in the direct-link navigation. */
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
