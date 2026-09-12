@@ -1046,8 +1046,8 @@ summary {
 .lessons-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  max-width: 1120px;
-  column-gap: 36px;
+  max-width: 1180px;
+  column-gap: 48px;
   row-gap: 28px;
   align-items: start;
 }
