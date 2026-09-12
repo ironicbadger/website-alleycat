@@ -36,8 +36,16 @@
           <img src="assets/icons/menu.svg" alt="" width="24" height="24" />
         </button>
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-          <a href="index.html#lessons">Lessons</a
-          ><a href="index.html#about">Meet Catherine</a
+          <details class="lessons-dropdown">
+            <summary>
+              Lessons <span class="nav-caret" aria-hidden="true"></span>
+            </summary>
+            <div class="lessons-menu">
+              <a href="signup.html">Sign up</a>
+              <a href="music-kittens.html">Music Kittens</a>
+            </div>
+          </details>
+          <a href="index.html#about">Meet Catherine</a
           ><a href="q_and_a.html">FAQs</a>
         </nav>
         <a class="portal-button" href="portal.html">Student Portal</a>
@@ -129,7 +137,7 @@
             <span>Music theory</span>
           </li>
           <li class="instrument">
-            <a class="offering-link" href="#group-classes">
+            <a class="offering-link" href="music-kittens.html">
               <img
                 src="assets/images/lesson-groups.webp"
                 alt=""
@@ -165,8 +173,8 @@
             <p>Ages 3–5</p>
           </div>
           <p class="group-class-note">
-            More details coming soon.
-            <a href="#contact">Ask Cat about classes</a>.
+            Six-week fall session, starting October 27.
+            <a href="music-kittens.html">Explore the classes</a>.
           </p>
         </div>
       </section>

@@ -30,8 +30,14 @@ Edit `schoolAnnouncement` at the top of `site.js`. The same banner appears on ev
 
 - `enabled`: set to `false` when there is no announcement.
 - `text`: the short announcement, such as an upcoming recital or new class.
-- `linkText` and `href`: an optional link; leave both empty for text only. Use `index.html#group-classes` for the young musicians section.
+- `linkText` and `href`: an optional link; leave both empty for text only. Use `music-kittens.html` for the young musicians landing page.
 
 The banner uses plain text, wraps on small screens, and does not rotate or scroll. It requires JavaScript. Class descriptions and age ranges are in `index.html` under `group-classes`.
 
 The announcements and young musicians work is a local draft on `codex/announcements-and-young-musicians`. It has not been published.
+
+## Music Kittens landing page
+
+`music-kittens.html` contains Music Kittens and Mini Musicians ages, fall dates, class times, pricing and caregiver requirements from the supplied flyer. Its registration button uses the dedicated Google Form decoded from the flyer QR code, separate from private lesson registration. The original flyer is available at `assets/documents/music-kittens-flyer.pdf`.
+
+The shared Lessons navigation is a native disclosure with Sign up and Music Kittens links. When editing navigation, update all six public pages and `navbar.html`; Escape, outside clicks and focus leaving the dropdown close it.

@@ -4,7 +4,7 @@ const schoolAnnouncement = {
   enabled: true,
   text: "Coming soon: small group music classes for ages 0–5.",
   linkText: "Explore classes",
-  href: "index.html#group-classes",
+  href: "music-kittens.html",
 };
 
 if (schoolAnnouncement.enabled && schoolAnnouncement.text.trim()) {
@@ -36,7 +36,9 @@ document.querySelectorAll("[data-registration]").forEach((link) => {
 
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector(".site-nav");
+const lessonsDropdown = document.querySelector(".lessons-dropdown");
 function closeMenu() {
+  lessonsDropdown?.removeAttribute("open");
   navigation?.removeAttribute("data-open");
   menuButton?.setAttribute("aria-expanded", "false");
 }
@@ -49,12 +51,27 @@ navigation?.addEventListener("click", (event) => {
   if (event.target.closest("a")) closeMenu();
 });
 document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lessonsDropdown?.open) {
+    lessonsDropdown.removeAttribute("open");
+    lessonsDropdown.querySelector("summary").focus();
+    return;
+  }
   if (
     event.key === "Escape" &&
     menuButton?.getAttribute("aria-expanded") === "true"
   ) {
     closeMenu();
     menuButton.focus();
+  }
+});
+document.addEventListener("click", (event) => {
+  if (!lessonsDropdown?.contains(event.target)) {
+    lessonsDropdown?.removeAttribute("open");
+  }
+});
+lessonsDropdown?.addEventListener("focusout", (event) => {
+  if (!lessonsDropdown.contains(event.relatedTarget)) {
+    lessonsDropdown.removeAttribute("open");
   }
 });
 

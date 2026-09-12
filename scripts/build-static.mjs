@@ -10,6 +10,7 @@ const pages = [
   "q_and_a.html",
   "schedule.html",
   "signup.html",
+  "music-kittens.html",
   "site.css",
   "site.js",
 ];
@@ -40,7 +41,7 @@ for (const file of images)
     path.join(root, "assets/images", file),
     path.join(output, "assets/images", file),
   );
-for (const folder of ["fonts", "icons"])
+for (const folder of ["fonts", "icons", "documents"])
   await cp(
     path.join(root, "assets", folder),
     path.join(output, "assets", folder),

@@ -866,3 +866,172 @@ summary {
     font-size: 15px;
   }
 }
+
+/* A native disclosure keeps the Lessons links usable without JavaScript. */
+.lessons-dropdown {
+  position: relative;
+}
+.lessons-dropdown summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+.lessons-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+.nav-caret {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.lessons-dropdown[open] .nav-caret {
+  transform: translateY(2px) rotate(225deg);
+}
+.lessons-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: -16px;
+  z-index: 20;
+  min-width: 180px;
+  padding: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px #222a2e14;
+}
+.site-nav .lessons-menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+.site-nav .lessons-menu a:hover {
+  background: var(--gray);
+}
+.kittens-main {
+  padding-block: 38px 48px;
+}
+.kittens-intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+.kittens-intro h1 {
+  font-size: clamp(38px, 4.5vw, 58px);
+}
+.kittens-intro h1 span {
+  font-size: 0.8em;
+}
+.kittens-intro p:not(.offering-eyebrow) {
+  margin-top: 18px;
+  max-width: 600px;
+}
+.kittens-lede {
+  font-size: 23px;
+}
+.kittens-intro .button {
+  margin-top: 24px;
+}
+.kittens-intro img {
+  width: 340px;
+  justify-self: center;
+}
+.term-note {
+  margin-top: 36px;
+  padding: 22px 28px;
+  background: var(--pink);
+  border-radius: 10px;
+  display: grid;
+  gap: 5px;
+  text-align: center;
+}
+.term-note span {
+  font-size: 16px;
+}
+.kittens-classes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  padding-block: 40px;
+}
+.kittens-class h2 {
+  font-size: 36px;
+}
+.class-time {
+  color: var(--link);
+  font-weight: 700;
+  margin-block: 12px 18px;
+}
+.kittens-class h3 {
+  font-size: 24px;
+  margin-top: 24px;
+}
+.kittens-class ul {
+  padding-left: 22px;
+}
+.kittens-class li + li {
+  margin-top: 10px;
+}
+.caregiver-note {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  font-size: 16px;
+}
+.kittens-register {
+  background: var(--gray);
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+}
+.kittens-register h2 {
+  font-size: 34px;
+}
+.kittens-register p {
+  margin-top: 14px;
+}
+.kittens-register .button {
+  margin-top: 24px;
+}
+.flyer-link {
+  font-size: 16px;
+}
+@media (max-width: 760px) {
+  .lessons-dropdown summary {
+    padding: 12px 4px;
+  }
+  .lessons-menu {
+    position: static;
+    box-shadow: none;
+    min-width: 0;
+    margin: 0 0 8px;
+    background: var(--gray);
+  }
+  .kittens-main {
+    padding-top: 26px;
+  }
+  .kittens-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .kittens-intro img {
+    width: 220px;
+  }
+  .kittens-classes {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-block: 30px;
+  }
+  .kittens-class + .kittens-class {
+    border-top: 1px solid var(--line);
+    padding-top: 30px;
+  }
+  .term-note,
+  .kittens-register {
+    padding: 24px 20px;
+  }
+}
