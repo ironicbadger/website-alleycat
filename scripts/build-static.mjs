@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, access } from "node:fs/promises";
+import { cp, mkdir, rm, access, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -32,11 +32,26 @@ const images = [
   ].map((name) => `lesson-${name}.webp`),
 ];
 
+// Render the announcement into HTML so it does not depend on browser JavaScript.
+const announcement = JSON.parse(await readFile(path.join(root, "announcement.json"), "utf8"));
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+})[character]);
+const banner = announcement.enabled && announcement.text.trim()
+  ? `<aside class="announcement" aria-label="School announcement"><div class="wrap announcement-inner"><span>${escapeHtml(announcement.text)}</span>${announcement.linkText && announcement.href ? `<a href="${escapeHtml(announcement.href)}">${escapeHtml(announcement.linkText)}</a>` : ""}</div></aside>`
+  : "";
+
 // Publish only public page assets, never repository metadata or internal notes.
 await rm(output, { recursive: true, force: true });
 await mkdir(path.join(output, "assets/images"), { recursive: true });
-for (const file of pages)
-  await cp(path.join(root, file), path.join(output, file));
+for (const file of pages) {
+  if (file.endsWith(".html")) {
+    const html = await readFile(path.join(root, file), "utf8");
+    await writeFile(path.join(output, file), html.replace('<header class="site-header">', `${banner}\n    <header class="site-header">`));
+  } else {
+    await cp(path.join(root, file), path.join(output, file));
+  }
+}
 for (const file of images)
   await cp(
     path.join(root, "assets/images", file),

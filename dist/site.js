@@ -1,31 +1,3 @@
-// Edit this one announcement for every page. Set enabled to false to hide it.
-// For recitals or other news, replace the text and optional link together.
-const schoolAnnouncement = {
-  enabled: true,
-  text: "Coming soon: small group music classes",
-  linkText: "Explore classes for age 0-5",
-  href: "music-kittens.html",
-};
-
-if (schoolAnnouncement.enabled && schoolAnnouncement.text.trim()) {
-  const banner = document.createElement("aside");
-  banner.className = "announcement";
-  banner.setAttribute("aria-label", "School announcement");
-  const content = document.createElement("div");
-  content.className = "wrap announcement-inner";
-  const message = document.createElement("span");
-  message.textContent = schoolAnnouncement.text;
-  content.append(message);
-  if (schoolAnnouncement.linkText && schoolAnnouncement.href) {
-    const link = document.createElement("a");
-    link.href = schoolAnnouncement.href;
-    link.textContent = schoolAnnouncement.linkText;
-    content.append(link);
-  }
-  banner.append(content);
-  document.querySelector(".site-header")?.before(banner);
-}
-
 // Google registration form supplied by the school.
 const registrationUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSe4-aOulcCENNHHYs33Ax_OEAbvoSqY3S2nk93dzVqrwS2VuA/viewform?usp=sharing&ouid=101060649055349864171";

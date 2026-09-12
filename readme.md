@@ -3,7 +3,8 @@
 A responsive static website. Serve the repository locally:
 
 ```sh
-python3 -m http.server 8765 --bind 127.0.0.1
+node scripts/build-static.mjs
+python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```
 
 Open `http://127.0.0.1:8765`.
@@ -26,13 +27,13 @@ No external JavaScript framework is required. For hosting, run `node scripts/bui
 
 ## Seasonal announcements
 
-Edit `schoolAnnouncement` at the top of `site.js`. The same banner appears on every modern page:
+Edit `announcement.json`, then run `node scripts/build-static.mjs`. The same banner appears on every modern page:
 
 - `enabled`: set to `false` when there is no announcement.
 - `text`: the short announcement, such as an upcoming recital or new class.
 - `linkText` and `href`: an optional link; leave both empty for text only. Use `music-kittens.html` for the young musicians landing page.
 
-The banner uses plain text, wraps on small screens, and does not rotate or scroll. It requires JavaScript. Class descriptions and age ranges are in `index.html` under `group-classes`.
+The banner uses plain text, wraps on small screens, and does not rotate or scroll. It is included directly in the built HTML and does not require JavaScript. Class descriptions and age ranges are in `index.html` under `group-classes`.
 
 The announcement and young musicians features were developed on `codex/announcements-and-young-musicians`, then refined in `codex/nav-redo`.
 
