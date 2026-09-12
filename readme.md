@@ -34,14 +34,14 @@ Edit `schoolAnnouncement` at the top of `site.js`. The same banner appears on ev
 
 The banner uses plain text, wraps on small screens, and does not rotate or scroll. It requires JavaScript. Class descriptions and age ranges are in `index.html` under `group-classes`.
 
-The announcements and young musicians work is a local draft on `codex/announcements-and-young-musicians`. It has not been published.
+The announcement and young musicians features were developed on `codex/announcements-and-young-musicians`, then refined in `codex/nav-redo`.
 
 ## Music Kittens landing page
 
 `music-kittens.html` contains Music Kittens and Mini Musicians ages, fall dates, class times, pricing and caregiver requirements from the supplied flyer. Its registration button uses the dedicated Google Form decoded from the flyer QR code, separate from private lesson registration. The original flyer is available at `assets/documents/music-kittens-flyer.pdf`.
 
-The shared Lessons navigation is a native disclosure with Sign up and Music Kittens links. When editing navigation, update all six public pages and `navbar.html`; Escape, outside clicks and focus leaving the dropdown close it.
+The navigation uses direct Lessons, Little Musicians and FAQs links plus the Student Portal button. When editing navigation, update all six public pages and `navbar.html`.
 
 ## Navigation comparison
 
-The `codex/nav-redo` worktree previews direct Lessons, Little musicians and FAQs links, with the existing prominent Student Portal button. The previous dropdown design stays in the original worktree. This version is local only.
+The `codex/nav-redo` worktree previews direct Lessons, Little musicians and FAQs links, with the existing prominent Student Portal button. The previous dropdown design stays in the original worktree. The approved nav-redo version is the release candidate for main.
