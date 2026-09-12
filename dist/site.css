@@ -1135,3 +1135,18 @@ summary {
     --nav-divider-gap: 16px;
   }
 }
+
+/* Keep the decision and action together; give the drawing its own space. */
+.lessons-pricing .button {
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+.lessons-introduction {
+  align-self: start;
+}
+.lessons-illustration {
+  max-height: 340px;
+  margin-top: 26px;
+}
