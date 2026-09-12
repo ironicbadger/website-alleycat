@@ -3,7 +3,7 @@
 const schoolAnnouncement = {
   enabled: true,
   text: "Coming soon: small group music classes for ages 0–5.",
-  linkText: "Explore classes",
+  linkText: "Explore classes for age 0-5",
   href: "music-kittens.html",
 };
 
